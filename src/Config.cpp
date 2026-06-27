@@ -44,10 +44,9 @@ void Config::load(const string & path) {
 		string key, value;
 		if (iss >> key >> value)
 			_kv[key] = value;
-
-		cerr << "[Config] loaded " << _kv.size()
-			 << " entries from " << path << '\n';
 	}
+	cerr << "[Config] loaded " << _kv.size()
+		 << " entries from " << path << '\n';
 }
 
 unordered_set<string> Config::loadSet(const string & path) {
