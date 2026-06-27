@@ -4,4 +4,6 @@
 -Wextra
 -Iinclude
 -Ithird_party
+-Ithird_party/cppjieba/include
+-Ithird_party/cppjieba/deps/limonp/include
 -D_GNU_SOURCE
